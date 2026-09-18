@@ -49,6 +49,12 @@
   transition: all 0.25s ease;
 }
 
+.photo__content-link{
+  text-decoration: none;
+  color: black;
+}
+
+
 .photo__content button:hover{
   box-shadow: 0 10px 25px rgba(0,0,0,0.4);
   transform: translateY(-3px);
@@ -63,7 +69,10 @@
   text-decoration: underline;
   line-height: 31px;
   cursor: pointer;
+  color: black;
 }
+
+.email__content-link{color: black;}
 
 .email__content:hover{
   text-shadow: 1px 0 1px black;

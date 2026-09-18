@@ -12,20 +12,20 @@
     <link rel="stylesheet" href="css_files/footer.css" />
     <link rel="stylesheet" href="css_files/success-module-window.css" />
     <link rel="stylesheet" href="css_files/adaptive/header-adaptive.css" />
-    <link rel="stylesheet" href="css_files/adaptive/main-photo.css">
-    <link rel="stylesheet" href="css_files/adaptive/hero.css">
-    <link rel="stylesheet" href="css_files/adaptive/services.css">
-    <link rel="stylesheet" href="css_files/adaptive/projects.css">
-    <link rel="stylesheet" href="css_files/adaptive/footer-adaptive.css">
+    <link rel="stylesheet" href="css_files/adaptive/main-photo.css" />
+    <link rel="stylesheet" href="css_files/adaptive/hero.css" />
+    <link rel="stylesheet" href="css_files/adaptive/services.css" />
+    <link rel="stylesheet" href="css_files/adaptive/projects.css" />
+    <link rel="stylesheet" href="css_files/adaptive/footer-adaptive.css" />
     <link rel="stylesheet" href="css_files/module-window.css" />
-    <link rel="stylesheet" href="css_files/adaptive/module-window.css">
+    <link rel="stylesheet" href="css_files/adaptive/module-window.css" />
 
     <link
       rel="shortcut icon"
       href="icons/logo_favicon.png"
       type="image/x-icon"
     />
-    
+
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -46,7 +46,9 @@
       <div class="header__block">
         <nav class="header__nav">
           <!-- LOGO -->
-          <img class="header__nav-logo" src="icons/Logo.png" alt="" />
+          <a href="index.html"
+            ><img class="header__nav-logo" src="icons/Logo.png" alt=""
+          /></a>
           <div class="header__nav-box">
             <!-- LIST -->
             <ul class="header__list">
@@ -80,7 +82,7 @@
               </button>
             </div>  -->
           </div>
-          
+
           <div class="header__button-sidebar">
             <!-- PHONE-BUTTON -->
             <button class="header__call" id="callButton">
@@ -137,10 +139,18 @@
           <!-- CONTENT -->
           <div class="photo__content">
             <h1>Самый простой способ построить свой успех</h1>
-            <button>Рассчитать стоимость</button>
+            <button>
+              <a class="photo__content-link" href="request.html"
+                >Рассчитать стоимость</a
+              >
+            </button>
           </div>
           <!-- EMAIL -->
-          <div class="email__content">SkSirius@su10.ru</div>
+          <div class="email__content">
+            <a class="email__content-link" href="mailto:SkSirius@su10.ru"
+              >SkSirius@su10.ru</a
+            >
+          </div>
           <!-- IMAGE -->
           <div class="photo__image">
             <img src="Images/Fone.png" alt="" class="image__photo" />
@@ -152,10 +162,9 @@
         <div class="hero__container">
           <h2 class="hero__title">Мы — СК Сириус</h2>
           <div class="hero__desc">
-            Мы молодая компания, предоставляющая 
-            услуги по строительству и разработке 
-            проектов. Наша сила — уникальная сеть 
-            местных и международных навыков.
+            Мы молодая компания, предоставляющая услуги по строительству и
+            разработке проектов. Наша сила — уникальная сеть местных и
+            международных навыков.
           </div>
         </div>
       </section>
@@ -253,7 +262,9 @@
                 alt=""
                 class="projects__image"
               />
-              <a href="projectInDetails.html" class="services__name services__name-adaptive"
+              <a
+                href="projectInDetails.html"
+                class="services__name services__name-adaptive"
                 ><span>Славянский дом</span>
                 <div class="services__icon-box">
                   <img
@@ -306,8 +317,8 @@
 
         <div class="footer__middle">
           <div class="footer__contacts">
-            <a href="/" class="footer__email">SkSirius@su10.ru</a
-            ><a href="/" class="footer__phone-number">8 (962) 167-78-90</a>
+            <a href="mailto:SkSirius@su10.ru" class="footer__email">SkSirius@su10.ru</a
+            ><a href="tel:89621677890" class="footer__phone-number">8 (962) 167-78-90</a>
           </div>
           <nav class="footer__nav">
             <!-- <div class="footer__nav-up"> -->
@@ -323,9 +334,9 @@
 
         <div class="footer__bottom">
           <div class="footer__socials">
-            <img src="icons/social-medias/vk.svg" alt="" class="vk" />
-            <img src="icons/social-medias/tg.svg" alt="" class="tg" />
-            <img src="icons/social-medias/cpo.png" alt="" class="cpo" />
+            <a href="https://vk.ru/im/convo/7271017?tab=all" target="_blank" rel="noopener noreferrer"><img src="icons/social-medias/vk.svg" alt="" class="vk" /></a>
+            <a href=""><img src="icons/social-medias/tg.svg" alt="" class="tg" /></a>
+            <a href=""><img src="icons/social-medias/cpo.png" alt="" class="cpo" /></a>
           </div>
           <div class="footer__copyright">
             <p class="footer__copyright-text">© 2022–2026, CК Sirius</p>
@@ -352,7 +363,7 @@
 
           <p class="callback__manager-text">
             Наш менеджер перезвонит вам<br />
-            в рабочее время в течение 2 минут
+            в рабочее время в течение дня
           </p>
         </div>
 

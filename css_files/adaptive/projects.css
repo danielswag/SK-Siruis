@@ -3,7 +3,8 @@
 ========================= */
 
 @media (max-width: 1440px) {
-  .projects__container {
+  .projects__container,
+  .p-reviews__container {
     width: calc(100% - 40px);
   }
 
@@ -50,7 +51,8 @@
 ========================= */
 
 @media (max-width: 1024px) {
-  .projects__container {
+  .projects__container,
+  .p-reviews__container {
     width: min(900px, calc(100% - 40px));
   }
 
@@ -79,13 +81,33 @@
     min-width: 0;
   }
 
-  /* .projects__list{grid-template-columns: 1fr;} */
+  .p-reviews__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
 
-  .services__name-adaptive {
-    /* width: 80%; */
-    /* margin: 0 auto;
-    padding: 0 40px; */
-    /* flex-shrink: 0; */
+  .p-reviews__title {
+    margin-bottom: clamp(20px, 5vw, 40px);
+    font-size: 50px;
+  }
+
+  .p-review__right {
+    gap: clamp(25px, 5vw, 50px);
+  }
+
+  .p__review-text {
+    font: 500 22px/48px var(--font-main);
+    margin-bottom: clamp(20px, 4vw, 40px);
+  }
+
+  .p__review-company-name {
+    font: 800 18px/48px var(--font-main);
+  }
+
+  .em-dash,
+  .p__review-role {
+    font: 500 18px/48px var(--font-main);
   }
 }
 
@@ -94,7 +116,8 @@
 ========================= */
 
 @media (max-width: 768px) {
-  .projects__container {
+  .projects__container,
+  .p-reviews__container {
     width: calc(100% - 24px);
   }
   .projects__list {
@@ -102,12 +125,40 @@
   }
 }
 
+  .p__review-role {
+  margin-left: 32px;
+}
+
 /* =========================
    SMALL MOBILE
 ========================= */
 
 @media (max-width: 480px) {
-  .projects__container {
+  .projects__container,
+  .p-reviews__container {
     width: calc(100% - 24px);
   }
+
+  .p-reviews__title {
+    margin-bottom: clamp(20px, 5vw, 40px);
+    font-size: 40px;
+  }
+
+  .p__review-text {
+    font: 500 22px/40px var(--font-main);
+    margin-bottom: clamp(20px, 3vw, 40px);
+  }
+
+  .p__review-company-name {
+    font: 800 16px/40px var(--font-main);
+  }
+
+  .em-dash,
+  .p__review-role {
+    font: 500 16px/40px var(--font-main);
+  }
+
+  .p__review-role {
+  margin-left: 30px;
+}
 }

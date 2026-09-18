@@ -1,6 +1,6 @@
-.footer__title {
+/* .footer__title {
   font-size: clamp(26px, 5vw, 90px);
-}
+} */
 
 /* =========================
    mini-DESKTOP
@@ -48,11 +48,12 @@
     align-items: center;
   }
 
-    .footer__email, .footer__phone-number{
+  .footer__email,
+  .footer__phone-number {
     padding: 0;
   }
 
-  .footer__email{
+  .footer__email {
     padding-bottom: clamp(4px, 1vw, 15px);
   }
 
@@ -62,7 +63,7 @@
     /* padding-block:  clamp(6px, 5vw, 15px); */
   }
 
-  .footer__nav{
+  .footer__nav {
     width: auto;
     text-align: center;
     column-gap: clamp(60px, 5vw, 120px);
@@ -70,49 +71,46 @@
     padding-inline: 20px;
   }
 
-  .footer{
+  .footer {
     height: auto;
   }
 
-  .footer__bottom{
+  .footer__bottom {
     width: 100%;
     /* display: block; */
     /* display: flex;
     justify-content: center; */
-        /* align-items: center; */
+    /* align-items: center; */
     /* position: relative;
     flex-direction: column;  */
     /* max-width: 1400px; */
     /* min-height: 150px; */
   }
 
-  .footer__socials{
+  .footer__socials {
     /* justify-content: center;
     margin-top: 30px */
   }
 
-  .footer__copyright{
+  .footer__copyright {
     /* width: 100%; */
     display: flex;
     justify-content: space-evenly;
     font-size: clamp(16px, 4vw, 22px);
-        /* position: absolute;
+    /* position: absolute;
     left: 0;
     right: 0; */
     /* bottom: 0; */
-    
   }
 
-  .footer__copyright-text{
+  .footer__copyright-text {
     width: 50%;
   }
 
-    .footer__copyright-text{
+  .footer__copyright-text {
     white-space: wrap;
     text-align: center;
   }
-
-
 }
 /* =========================
    TABLET
@@ -125,12 +123,12 @@
   .footer__container {
   }
 
-      .footer__socials{
+  .footer__socials {
     justify-content: center;
-    margin-top: 36px
+    margin-top: 36px;
   }
 
-  .footer__copyright-text{
+  .footer__copyright-text {
     white-space: wrap;
     text-align: center;
   }
@@ -144,16 +142,17 @@
   .footer__container {
     width: calc(100% - 24px);
   }
-}
-    .footer__socials{
+  .footer__socials {
     justify-content: center;
-    margin-top: 46px
+    margin-top: 46px;
   }
 
-    .footer__copyright{
+  .footer__copyright {
     /* width: 100%; */
     display: flex;
-    justify-content: space-evenly;}
+    justify-content: space-evenly;
+  }
+}
 
 /* =========================
    SMALL MOBILE
@@ -164,13 +163,13 @@
     width: calc(100% - 24px);
   }
 
-    .footer__contacts {
+  .footer__contacts {
     font-size: (18px, 4vw, 22px);
   }
 
-    .footer__socials{
+  .footer__socials {
     justify-content: center;
-    margin-top: 50px
+    margin-top: 50px;
   }
   .footer__container {
   }

@@ -32,6 +32,8 @@ main {
   justify-content: flex-start;
   align-content: center;
   gap: 70px;
+  /* margin-top: 80px; */
+  padding-top: 80px;
 }
 
 .services__element-withoutLine {
@@ -41,21 +43,23 @@ main {
   align-content: center;
   border-bottom: 1px solid #222;
   gap: 70px;
+  padding-top: 80px;
 }
 
-.services__last-element {
+.services__element-withoutLine {
   height: 360px;
   display: flex;
   justify-content: flex-start;
   align-content: center;
   gap: 70px;
+  padding-top: 80px;
 }
 
 .services__text {
   /* display: flex;
     flex-direction: column;
     justify-content: center; */
-  margin-top: 80px;
+  /* margin-top: 80px; */
 }
 
 .services__text-title {
@@ -72,6 +76,6 @@ main {
   line-height: 48px;
 }
 
-.services__image {
+/* .services__image {
   margin-top: 80px;
-}
+} */
