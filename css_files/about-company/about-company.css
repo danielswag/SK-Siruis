@@ -1,0 +1,110 @@
+.about-company__info {
+  margin-top: 76px;
+}
+
+.about-company__caption {
+  margin-bottom: 24px;
+  font-size: 60px;
+  font-family: "SFT Schrifted", sans-serif;
+
+  text-shadow: var(--text-shadow);
+  color: var(--dark-blue);
+  line-height: 71px;
+}
+
+.about-company {
+  padding-top: 32px;
+}
+
+.about-company__title-desc {
+  margin-bottom: 24px;
+  font-size: 35px;
+  font-family: "SFT Schrifted", sans-serif;
+  /* padding-top: 32px; */
+  margin-bottom: 144px;
+  text-shadow: var(--text-shadow);
+  /* color: var(--dark-blue); */
+  line-height: 48px;
+}
+
+.owner__container {
+  display: flex;
+}
+
+.owner__desc {
+  padding-block: 74px;
+  /* margin-bottom: 74px; */
+  padding-left: 124px;
+  position: relative;
+  background-color: var(--gray);
+  height: 560px;
+}
+
+.owner__quote {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: var(--font-main);
+  /* padding-top: 32px; */
+  color: #676767;
+  margin: 0;
+
+  /* text-shadow: var(--text-shadow); */
+  /* color: var(--dark-blue); */
+  line-height: 48px;
+
+  position: relative;
+  overflow: visible;
+}
+
+.owner__name {
+  margin-top: 28px;
+  font: 700 35px/48px var(--font-main);
+}
+
+.owner__role {
+  font: 400 24px/48px var(--font-main);
+  color: #676767;
+}
+
+.quotation {
+  color: var(--dark-blue);
+  font-size: 64px;
+  position: absolute;
+  line-height: 1;
+}
+
+.quotation-left {
+  position: absolute;
+  left: 88px;
+  top: 30px;
+}
+
+.quotation-right {
+  position: absolute;
+  right: 394px;
+  top: 336px;
+}
+/* 
+THREAD */
+
+.thread{
+    background-color: var(--gray);
+}
+
+.thread__container{
+    margin-top: 120px;
+    position: relative;
+}
+
+.thread-photo {
+  display: block;
+  margin: 0 auto;
+  /* position: relative; */
+}
+
+.thread-title{
+    position: absolute;
+    top: 36px;
+}
+
+

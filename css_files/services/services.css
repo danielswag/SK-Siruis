@@ -1,0 +1,77 @@
+main {
+  background-color: var(--gray);
+}
+
+.services__section {
+  background-color: var(--gray);
+  padding-bottom: 96px;
+  border-radius: 0 0 70px 70px;
+  position: relative;
+  z-index: 1;
+}
+
+.services__title {
+  padding-top: 96px;
+  margin-bottom: 96px;
+  font-family: "SFT Schrifted";
+  color: var(--dark-blue);
+  font-size: 60px;
+  line-height: 71px;
+}
+
+.services__elements {
+  display: flex;
+  flex-direction: column;
+}
+
+.services__element {
+  height: 360px;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  gap: 70px;
+}
+
+.services__element-withoutLine {
+  height: 360px;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  border-bottom: 1px solid #222;
+  gap: 70px;
+}
+
+.services__last-element {
+  height: 360px;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  gap: 70px;
+}
+
+.services__text {
+  /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+  margin-top: 80px;
+}
+
+.services__text-title {
+  padding-bottom: 12px;
+  font-family: "SFT Schrifted";
+  font-size: 48px;
+  line-height: 57px;
+  letter-spacing: 6%;
+}
+
+.services__text-desc {
+  font-family: var(--font-main);
+  font-size: 22px;
+  line-height: 48px;
+}
+
+.services__image {
+  margin-top: 80px;
+}

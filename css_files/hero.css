@@ -1,0 +1,23 @@
+.hero {
+  margin-top: 96px;
+}
+
+.hero__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 178px;
+}
+
+.hero__title {
+  font-size: 60px;
+  color: var(--dark-blue);
+  text-shadow: var(--text-shadow);
+  line-height: 71px;
+}
+
+.hero__desc{
+    font-size: 32px;
+    text-shadow: var(--text-shadow);
+    line-height: 48px;
+    width: 100%;
+}

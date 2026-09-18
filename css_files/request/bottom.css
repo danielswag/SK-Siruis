@@ -1,0 +1,183 @@
+.request__bottom {
+  background-color: white;
+  padding-bottom: 110px;
+  border-radius: 0 0 70px 70px;
+  position: relative;
+  z-index: 1;
+}
+
+.request__bottom {
+  margin-top: 96px;
+}
+
+.request__bottom__container {
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  column-gap: 64px;
+}
+
+.request__bottom-left {
+  display: flex;
+  flex-direction: column;
+  row-gap: 96px;
+}
+
+.request__bottom-file {
+  width: 420px;
+  height: 122px;
+  display: flex;
+  align-items: center;
+}
+
+.request__bottom-file:hover{opacity: 0.8;}
+
+.file-upload {
+  display: none;
+}
+
+.file-upload__label {
+  width: 420px;
+  height: 122px;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+
+  gap: 42px;
+
+  cursor: pointer;
+
+  background-color: #f4f4f4;
+  border-radius: 70px;
+}
+
+.file-upload__label-text {
+  font-size: 26px;
+  font-family: var(--font-main);
+  font-weight: 500;
+  line-height: 33px;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.file-upload__icon {
+  height: 76px;
+  width: 76px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e2e2e2;
+  border-radius: 70px;
+  flex-shrink: 0;
+}
+
+.request__bottom-image {
+  height: 24px;
+  width: 24px;
+}
+
+.request__bottom-send {
+  background-color: #1e4e8f;
+  height: 122px;
+  width: 720px;
+  color: white;
+  font: 40px/50px var(--font-main);
+  border-radius: 70px;
+  border: none;
+  cursor: pointer;
+}
+
+/* RIGHT */
+
+.request__list {
+  font: 400 22px/28px var(--font-main);
+  color: #77777b;
+  letter-spacing: 6%;
+  line-height: 28px;
+}
+
+ol {
+  list-style: none;
+}
+
+.request__list-item {
+  margin-bottom: 12px;
+}
+
+.privacy__policy {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  margin-top: 150px;
+  font: 400 16px/20px var(--font-main);
+}
+
+.privacy__policy__checkbox {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  appearance: none;
+  border: 2px solid #091d38;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.privacy__policy__checkbox:checked {
+  background-color: #091d38;
+}
+
+.privacy__policy__checkbox:checked::after {
+  content: "✓";
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 92%;
+}
+
+.privacy__policy-blue {
+  color: #1e02eb;
+}
+
+.footer__page-contacts {
+  height: 194px;
+}
+
+.footer__page-copy {
+  margin-top: 0px;
+  padding-top: 118px;
+}
+
+/* JS ЗАЯВКА */
+
+.inputData__error-text {
+    display: block;
+    color: red;
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+.checkbox-error {
+    outline: 2px solid red;
+    outline-offset: 2px;
+}
+
+.request__success {
+    display: none;
+}
+
+.inputData__field {
+    position: relative; 
+}
+
+.inputData__error-text {
+    position: absolute;
+    left: 0;
+    top: 100%;       /* сразу под полем */
+    margin-top: 6px;
+    color: red;
+    font-size: 14px;
+    white-space: nowrap;
+}

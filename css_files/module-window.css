@@ -1,0 +1,111 @@
+.callback {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+}
+
+.callback.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.callback__overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.callback__window {
+    position: relative;
+    z-index: 1;
+
+    width: 540px;
+    min-height: 350px;
+    padding: 45px 50px;
+
+    background-color: white;
+}
+
+.callback__close {
+    position: absolute;
+    top: 30px;
+    right: 35px;
+
+    border: none;
+    background: none;
+
+    font-size: 36px;
+    line-height: 1;
+    color: #091d38;
+
+    cursor: pointer;
+}
+
+.callback__title {
+    margin: 0 0 25px;
+
+    font: 700 28px/36px var(--font-main);
+    color: var(--dark-blue);
+}
+
+.callback__manager {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.callback__manager-photo {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.callback__manager-text {
+    margin: 0;
+
+    font: 400 16px/22px var(--font-main);
+    color: #8b9bb0;
+}
+
+.callback__form {
+    margin-top: 25px;
+}
+
+.callback__input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    padding: 0 14px;
+
+    border: 1px solid #d0d5db;
+    outline: none;
+
+    font: 400 16px/20px var(--font-main);
+}
+
+.callback__submit {
+    display: block;
+    margin: 22px 0 0 auto;
+
+    padding: 12px 20px;
+
+    border: none;
+    background-color: #4ba9ed;
+    color: white;
+
+    font: 400 16px/20px var(--font-main);
+    cursor: pointer;
+}
+
+.callback__input.error {
+    border-color: red;
+}
+
+.inputData__error-text{
+    color: red;
+    margin-top: 4px;
+    display: block;
+}

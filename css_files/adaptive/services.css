@@ -1,0 +1,153 @@
+/* =========================
+   mini-DESKTOP
+========================= */
+
+@media (max-width: 1440px) {
+  .services__container {
+    width: calc(100% - 40px);
+  }
+
+  
+    .services__list {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* стартово — 3 колонки как в макете */
+  gap: 32px;
+  align-items: stretch;
+  }
+
+  .services__list > * {
+    flex: 1 1 calc(50% - 12px); /* 2 карточки в ряд */
+    min-width: 280px;
+  }
+
+  .services__item  {
+      display: flex;
+  flex-direction: column;
+  }
+
+  .services__image{
+  width: 100%;
+  flex: 1; /* картинка занимает всё доступное место в карточке */
+  min-height: 0; /* важно для flex, чтобы не переполняло */
+  object-fit: cover; /* заполняет без искажений, обрезая лишнее */
+  display: block;
+  }
+
+  .services__name span {
+    font-size: clamp(22px, 2vw, 24px);
+  }
+}
+
+
+  /* .services__list{flex-wrap: wrap; }
+*/
+
+
+@media (max-width: 1200px) {
+  .services__container {
+    width: calc(100% - 40px);
+  }
+
+  .services__name{
+    gap: clamp(1px, 10vw, 16px);
+  }
+
+  .services__header {
+    align-items: center;
+    gap: 40px;
+  }
+
+  .services__name span {
+    text-shadow: 0.6px 0 0 rgba(0, 0, 0, 1);
+  }
+
+
+  .services__list{
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    /* gap: 140px; */
+  }
+
+  .services__link {
+    margin-top: 32px;
+    /* flex-wrap: wrap; */
+  }
+
+
+  .services__item{
+    min-height: 320px;
+  }
+
+  .services__image{
+      
+    max-height: 505px;
+  }
+
+  .services {
+    margin-block: 48px;
+  }
+
+  .services__title,
+  .services__link-item span {
+    text-shadow: 0.6px 0 0 rgba(0, 0, 0, 1);
+    line-height: 1.18;
+  }
+
+  .services__title {
+    font-size: clamp(26px, 5vw, 60px);
+  }
+  .services__link-item span {
+    font-size: clamp(16px, 3vw, 24px);
+    white-space: nowrap;
+  }
+}
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1024px) {
+  .services__container {
+    width: min(900px, calc(100% - 40px));
+  }
+  .services__container {
+
+  }
+
+  .services__image{
+    max-height: 430px;
+    /* align-items: stretch; */
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .services__container {
+    width: calc(100% - 24px);
+  }
+
+    .services__image{
+    max-height: none;
+    /* align-items: stretch; */
+  }
+
+  .services__list {
+    grid-template-columns: 1fr; /* на совсем маленьких — точно в столбик */
+    gap: 96px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .services__container {
+    width: calc(100% - 24px);
+  }
+  .services__container {
+
+  }
+}

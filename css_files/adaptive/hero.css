@@ -1,0 +1,76 @@
+/* =========================
+   mini-DESKTOP
+========================= */
+
+@media (max-width: 1200px) {
+
+  .hero__container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: clamp(14px, 3vw, 30px);
+    
+  }
+
+    .hero__container {
+    width: calc(100% - 40px);
+  }
+
+  .hero{
+    margin-block: 48px;
+  }
+
+  .hero__title, .hero__desc{
+    text-shadow: 0.6px 0 0 rgba(0, 0, 0, 1);
+    line-height: 1.18;
+  }
+
+  .hero__title{font-size: clamp(35px, 5vw, 90px);}
+  .hero__desc{font-size: clamp(18px, 3vw, 32px);}
+
+}
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1024px) {
+  .hero__container {
+    width: min(900px, calc(100% - 40px));
+  }
+  /* .hero__container {
+    display: flex;
+    justify-content: space-between;
+    gap: clamp(30px, 6vw, 80px);
+  } */
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .hero__container {
+    width: calc(100% - 24px);
+  }
+
+  /* .hero__container {
+    display: flex;
+    justify-content: space-between;
+    gap: clamp(30px, 6vw, 90px);
+  } */
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .hero__container {
+    width: calc(100% - 24px);
+  }
+  /* .hero__container {
+    display: flex;
+    justify-content: space-between;
+    gap: clamp(30px, 6vw, 60px);
+  } */
+}

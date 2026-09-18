@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css_files/header.css" />
+    <link rel="stylesheet" href="css_files/general.css" />
+    <link rel="stylesheet" href="css_files/footer.css" />
+    <link rel="stylesheet" href="css_files/projects.css" />
+    <link rel="stylesheet" href="css_files/services.css" />
+    <link rel="stylesheet" href="css_files/adaptive/services.css">
+    <link rel="stylesheet" href="css_files/projects/projects.css" />
+    <link rel="stylesheet" href="css_files/adaptive/projects.css">
+    <link rel="stylesheet" href="css_files/module-window.css" />
+    <link rel="stylesheet" href="css_files/success-module-window.css" />
+    <link
+      rel="stylesheet"
+      href="css_files/adaptive/success-module-window.css"
+    />
+    <link rel="stylesheet" href="css_files/adaptive/module-window.css" />
+    <link rel="stylesheet" href="css_files/adaptive/header-adaptive.css" />
+    <link rel="stylesheet" href="css_files/adaptive/footer-adaptive.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="icons/logo_favicon.png"
+      type="image/x-icon"
+    />
+    <title>Объекты</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__block">
+        <nav class="header__nav">
+          <!-- LOGO -->
+          <a href="index.html"
+            ><img class="header__nav-logo" src="icons/Logo.png" alt=""
+          /></a>
+
+          <div class="header__nav-box">
+            <!-- LIST -->
+            <ul class="header__list">
+              <!-- ABOUT US -->
+              <li>
+                <a href="about_us.html" class="header__list-link">О компании</a>
+              </li>
+              <!-- PROJECTS -->
+              <li>
+                <a href="projects.html" class="header__list-link">Объекты</a>
+              </li>
+              <!-- SERVISES -->
+              <li>
+                <a href="services.html" class="header__list-link">Услуги</a>
+              </li>
+              <!-- CONTACTS -->
+              <li>
+                <a href="contacts.html" class="header__list-link">Контакты</a>
+              </li>
+            </ul>
+            <!-- PHONE-BUTTON -->
+            <!-- <a href="/" class="header__button"
+              ><img src="icons/phone.svg" alt="" class="phone"
+            /></a> -->
+          </div>
+
+          <div class="header__button-sidebar">
+            <!-- PHONE-BUTTON -->
+            <button class="header__call" id="callButton">
+              <img src="icons/phone.svg" alt="Позвонить" class="phone" />
+            </button>
+            <!-- КНОПКА САЙДБАРА -->
+            <button class="header__burger" id="burgerButton" type="button">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar__overlay" id="sidebarOverlay"></div>
+      <aside class="sidebar__menu">
+        <button class="sidebar__close" id="sidebarClose" type="button">
+          ×
+        </button>
+        <ul class="sidebar__list">
+          <!-- ABOUT US -->
+          <li>
+            <a href="about_us.html" class="sidebar__link">О компании</a>
+          </li>
+          <!-- PROJECTS -->
+          <li>
+            <a href="projects.html" class="sidebar__link">Объекты</a>
+          </li>
+          <!-- SERVISES -->
+          <li>
+            <a href="services.html" class="sidebar__link">Услуги</a>
+          </li>
+          <!-- CONTACTS -->
+          <li>
+            <a href="contacts.html" class="sidebar__link">Контакты</a>
+          </li>
+        </ul>
+        <!-- PHONE-BUTTON -->
+        <!-- <button class="sidebar__call" id="sidebarCall" type="button">
+            <img src="icons/phone.svg" alt="Позвонить" class="phone" />
+          </button> -->
+      </aside>
+    </div>
+    <main>
+      <section class="projects projects__projects">
+        <div class="projects__container">
+          <div class="projects__header">
+            <div class="projects__title">Наши проекты</div>
+            <!-- LINK -->
+            <!-- <div class="projects__link">
+              <a href="projects.html" class="projects__link-item"
+                ><span>Все проекты</span>
+                <img
+                  src="icons/pointers/services-arrow.svg"
+                  alt=""
+                  class="projects__arrow"
+              /></a>
+            </div> -->
+          </div>
+          <div class="projects__list">
+            <!-- 1 -->
+            <article class="projects__item">
+              <img
+                src="Images/Slavynski_dom.png"
+                alt=""
+                class="projects__image"
+              />
+              <a href="projectInDetails.html" class="services__name"
+                ><span>Славянский дом</span>
+                <div class="services__icon-box">
+                  <img
+                    class="services__icon"
+                    src="icons/pointers/project-arrow.svg"
+                    alt=""
+                  />
+                </div>
+              </a>
+            </article>
+            <!-- 2 -->
+            <article class="projects__item">
+              <img src="Images/Cottage.png" alt="" class="projects__image" />
+              <a href="/" class="services__name"
+                ><span>Коттедж Ново-Талицы</span>
+                <div class="services__icon-box">
+                  <img
+                    class="services__icon"
+                    src="icons/pointers/project-arrow.svg"
+                    alt=""
+                  />
+                </div>
+              </a>
+            </article>
+            <!-- 3 -->
+            <article class="projects__item">
+              <img src="Images/Cottage_2.png" alt="" class="projects__image" />
+              <a href="/" class="services__name"
+                ><span>Коттедж за городом</span>
+                <div class="services__icon-box">
+                  <img
+                    class="projects__icon"
+                    src="icons/pointers/project-arrow.svg"
+                    alt=""
+                  />
+                </div>
+              </a>
+            </article>
+          </div>
+          <div class="projects__list">
+            <!-- 4 -->
+            <article class="projects__item">
+              <img src="Images/Housee.jpg" alt="" class="projects__image" />
+              <a href="/" class="services__name"
+                ><span>Уральский дом</span>
+                <div class="services__icon-box">
+                  <img
+                    class="services__icon"
+                    src="icons/pointers/project-arrow.svg"
+                    alt=""
+                  />
+                </div>
+              </a>
+            </article>
+            <!-- 5 -->
+            <article class="projects__item">
+              <img src="Images/house-5.png" alt="" class="projects__image" />
+              <a href="/" class="services__name"
+                ><span>Коттедж Жуково</span>
+                <div class="services__icon-box">
+                  <img
+                    class="services__icon"
+                    src="icons/pointers/project-arrow.svg"
+                    alt=""
+                  />
+                </div>
+              </a>
+            </article>
+            <!-- 6 -->
+            <article class="projects__item">
+              <img src="Images/house-6.png" alt="" class="projects__image" />
+              <a href="/" class="services__name"
+                ><span>Коттедж в Малинках</span>
+                <div class="services__icon-box">
+                  <img
+                    class="projects__icon"
+                    src="icons/pointers/project-arrow.svg"
+                    alt=""
+                  />
+                </div>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- Отзывы -->
+      <section class="projects__reviews">
+        <div class="p-reviews__container">
+          <h2 class="p-reviews__title">Отзывы</h2>
+          <!-- RIGHT -->
+          <!-- <div class="p-review__right">
+            <div class="slider-nav__buttons">
+              <div class="slider-nav__button" id="prevReview">
+                <img
+                  src="icons/pointers/left.svg"
+                  alt=""
+                  class="slider-nav__button-img"
+                />
+              </div>
+              <div class="slider-nav__button" id="nextReview">
+                <img
+                  src="icons/pointers/right.svg"
+                  alt=""
+                  class="slider-nav__button-img"
+                />
+              </div>
+            </div> -->
+          <!-- REVIEW -->
+          <!-- <div class="p__review">
+              <p class="p__review-text" id="reviewText">
+                Ценим SIRIUS за ответственность и самостоятельность. Все вопросы
+                решались оперативно, а договорённости соблюдались без лишнего
+                контроля с нашей стороны.
+              </p>
+              <div class="p__review-company-name"><span class="em-dash">—&nbsp;&nbsp;&nbsp;</span>Славянский Дом</div>
+              <div class="p__review-role">Директор</div>
+            </div>
+          </div>  -->
+          <div class="p-review__right">
+            <div class="slider-nav__buttons">
+              <div class="slider-nav__button" id="prevReview">
+                <img
+                  src="icons/pointers/left.svg"
+                  alt=""
+                  class="slider-nav__button-img"
+                />
+              </div>
+              <div class="slider-nav__button" id="nextReview">
+                <img
+                  src="icons/pointers/right.svg"
+                  alt=""
+                  class="slider-nav__button-img"
+                />
+              </div>
+            </div>
+
+            <!-- REVIEW -->
+            <div class="p__review">
+              <p class="p__review-text" id="reviewText"></p>
+              <div class="p__review-company-name">
+                <span class="em-dash">—&nbsp;&nbsp;&nbsp;</span
+                ><span id="reviewCompany"></span>
+              </div>
+              <div class="p__review-role" id="reviewRole"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <h2>
+          <a href="contacts.html" class="footer__title"
+            >Расскажите о вашем проекте</a
+          >
+        </h2>
+
+        <div class="footer__middle">
+          <div class="footer__contacts">
+            <a href="/" class="footer__email">SkSirius@su10.ru</a
+            ><a href="/" class="footer__phone-number">8 (962) 167-78-90</a>
+          </div>
+          <nav class="footer__nav">
+            <!-- <div class="footer__nav-up"> -->
+            <a href="about_us.html" class="footer__nav-item">О компании</a>
+            <a href="services.html" class="footer__nav-item">Контакты</a>
+            <!-- </div> -->
+            <!-- <div class="footer__nav-bottom"> -->
+            <a href="projects.html" class="footer__nav-item">Проекты</a>
+            <a href="contacts.html" class="footer__nav-item">Услуги</a>
+            <!-- </div> -->
+          </nav>
+        </div>
+
+        <div class="footer__bottom">
+          <div class="footer__socials">
+            <img src="icons/social-medias/vk.svg" alt="" class="vk" />
+            <img src="icons/social-medias/tg.svg" alt="" class="tg" />
+            <img src="icons/social-medias/cpo.png" alt="" class="cpo" />
+          </div>
+          <div class="footer__copyright">
+            <p class="footer__copyright-text">© 2022–2026, CК Sirius</p>
+            <p class="footer__copyright-text">Copyrights 2026</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- MODULE-WINDOW -->
+    <div class="callback" id="callback">
+      <div class="callback__overlay"></div>
+
+      <div class="callback__window">
+        <button class="callback__close" id="callbackClose">×</button>
+
+        <h2 class="callback__title">У вас возникли вопросы?</h2>
+
+        <div class="callback__manager">
+          <img
+            src="Images/owner-picture.png"
+            alt=""
+            class="callback__manager-photo"
+          />
+
+          <p class="callback__manager-text">
+            Наш менеджер перезвонит вам<br />
+            в рабочее время в течение 2 минут
+          </p>
+        </div>
+
+        <form class="callback__form">
+          <input
+            type="tel"
+            class="callback__input"
+            placeholder="Телефон *"
+            id="callbackPhone"
+          />
+
+          <button type="submit" class="callback__submit" id="callbackSubmit">
+            Перезвонить
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- УСПЕШНО ОТПРАВЛЕНО -->
+    <div class="callback__success" id="callbackSuccess">
+      <div class="callback__success-overlay"></div>
+      <div class="callback__success-modal">
+        <button class="callback__success-close" id="successClose">
+          <img src="icons/cross.svg" alt="" />
+        </button>
+
+        <div class="callback__success-icon">
+          <img src="icons/plane.svg" alt="" />
+        </div>
+
+        <h3 class="callback__success-title">
+          Ваша заявка на обратный звонок зарегистрирована
+        </h3>
+        <p class="callback__success-text">
+          Наш специалист скоро перезвонит вам
+        </p>
+      </div>
+    </div>
+    <script src="js/callback.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="js/projects.js"></script>
+  </body>
+</html>

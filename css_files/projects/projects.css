@@ -1,0 +1,95 @@
+.projects__projects {
+  margin-top: 0px;
+  background-color: var(--gray);
+  padding-bottom: 160px;
+  border-radius: 0;
+  position: relative;
+  z-index: 1;
+  margin-bottom: -128px;
+}
+
+
+.projects__reviews {
+  margin-top: 96px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+  border-radius: 70px 70px 70px 70px;
+  position: relative;
+  z-index: 2;
+  background-color: white;
+}
+
+.p-reviews__container {
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  column-gap: 64px;
+}
+
+.p-reviews__title {
+  font-family: "SFT Schrifted";
+  font-size: 60px;
+  letter-spacing: 6%;
+  text-shadow: var(--text-shadow);
+  line-height: 71px;
+}
+
+.p-review__right {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.slider-nav__buttons {
+  margin-top: 17px;
+  display: flex;
+  gap: 8px;
+}
+
+.slider-nav__button {
+  height: 54px;
+  width: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px solid #c3c3c3;
+  border-radius: 70px;
+  background-color: #f9f9fa;
+
+  cursor: pointer;
+}
+
+.slider-nav__button:hover {
+  opacity: 0.7;
+  border: 2px solid #c3c3c3;
+}
+
+.slider-nav__button-img {
+  height: 24px;
+  width: 24px;
+}
+
+.p__review-text {
+  font: 500 28px/48px var(--font-main);
+  margin-bottom: 40px;
+}
+
+.p__review-company-name {
+  font: 800 22px/48px var(--font-main);
+}
+
+.em-dash,
+.p__review-role {
+  font: 500 22px/48px var(--font-main);
+}
+
+.p__review-role {
+  margin-left: 40px;
+}
+
+.p__review {
+  transition: opacity 0.3s ease;
+}
+
+.p__review.fade-out {
+  opacity: 0;
+}

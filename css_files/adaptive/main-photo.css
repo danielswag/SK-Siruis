@@ -1,0 +1,96 @@
+/* =========================
+   DESKTOP
+========================= */
+
+/* .container {
+    width: min(1170px, calc(100% - 40px));
+    margin: 0 auto;
+} */
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1024px) {
+  .container {
+    width: min(900px, calc(100% - 40px));
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .photo__container {
+    width: calc(100% - 24px);
+    position: relative;
+    margin-inline: auto;
+    max-width: 1440px;
+    width: 100%;
+  }
+
+  .image__photo {
+    width: 100%;
+    height: 600px;
+    display: block;
+    object-fit: cover;
+  }
+
+  .email__content {
+    display: none;
+  }
+
+  .photo__content h1 {
+    text-align: center;
+    font-size: clamp(30px, 5vw, 60px);
+    text-shadow: none;
+    text-transform: uppercase;
+  }
+
+  .photo__content {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .photo__container {
+    width: calc(100% - 24px);
+    position: relative;
+    margin-inline: auto;
+    max-width: 1440px;
+    width: 100%;
+  }
+
+  .image__photo {
+    width: 100%;
+    height: 600px;
+    display: block;
+    object-fit: cover;
+  }
+
+  .email__content {
+    display: none;
+  }
+
+  .photo__content h1 {
+    text-align: center;
+    width: 300px;
+    font-size: clamp(30px, 5vw, 60px);
+    text-shadow: none;
+    text-transform: uppercase;
+  }
+
+  .photo__content button {
+    margin-top: 50px;
+  }
+}

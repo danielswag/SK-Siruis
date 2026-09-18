@@ -1,0 +1,79 @@
+.inputData {
+  margin-top: 96px;
+}
+
+.inputData__title {
+  font-family: "SFT Schrifted";
+  font-size: 60px;
+  letter-spacing: 4%;
+  text-shadow: var(--text-shadow);
+  line-height: 71px;
+  margin-bottom: 46px;
+}
+
+.inputData__elements{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px 48px;
+}
+
+/* .inputData__element{
+    border: 2px solid var(--rq-stroke);
+    color: var(--rq-text);
+    /* font-family: var(--font-main);
+    font-size: 22px; */ /*
+    font: 500 22px/28px var(--font-main);
+    border-radius: 70px;
+
+    padding-block: 47px;
+    padding-left: 52px;
+
+} */
+
+.inputData__field {
+    position: relative;
+}
+
+.inputData__element {
+    box-sizing: border-box;
+    width: 100%;
+
+    border: 2px solid var(--rq-stroke);
+    color: var(--rq-text);
+
+    font: 400 22px/28px var(--font-main);
+
+    border-radius: 70px;
+
+    padding-block: 47px;
+    padding-left: 52px;
+
+    outline: none;
+}
+
+.inputData__field label {
+    position: absolute;
+
+    left: 52px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    font: 500 22px/28px var(--font-main);
+    color: var(--rq-text);
+
+    background: white;
+    padding: 0 5px;
+
+    transition: 0.2s ease;
+}
+
+.inputData__field:focus-within label {
+    top: 0;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.inputData__field:focus-within .inputData__element-required{
+    display: none;
+}

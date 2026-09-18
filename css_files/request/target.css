@@ -1,0 +1,39 @@
+.target {
+  margin-top: 96px;
+}
+
+.target__title {
+  font-family: "SFT Schrifted";
+  font-size: 60px;
+  letter-spacing: 4%;
+  text-shadow: var(--text-shadow);
+  line-height: 71px;
+  margin-bottom: 46px;
+}
+
+.target__box {
+  height: 428px;
+}
+
+.target__text {
+  height: 428px;
+  width: 100%;
+  padding-block: 50px 350px;
+  padding-left: 80px;
+  box-sizing: border-box;
+  width: 100%;
+
+  border: 2px solid var(--rq-stroke);
+  color: var(--rq-text);
+
+  font: 400 22px/28px var(--font-main);
+
+  border-radius: 70px;
+
+  outline: none;
+}
+
+input::placeholder {
+    color: var(--rq-text);
+    opacity: 1;
+}

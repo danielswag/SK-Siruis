@@ -1,0 +1,118 @@
+.projects {
+  margin-top: 145px;
+  background-color: var(--gray);
+  padding-bottom: 96px;
+  border-radius: 0 0 70px 70px;
+  position: relative;
+  z-index: 1;
+}
+
+
+.projects__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects__title {
+  font-size: 60px;
+  font-family: "SFT Schrifted", sans-serif;
+  padding-top: 32px;
+  text-shadow: var(--text-shadow);
+  color: var(--dark-blue);
+  line-height: 71px;
+}
+
+.projects__link,
+.projects__link:visited {
+  margin-top: 138px;
+  text-decoration: none;
+}
+
+.projects__link-item,
+.projects__link-item:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.projects__link-item:hover span {
+  text-shadow: 0px 0px 1px black;
+  display: block;
+  transform: scale(1.01);
+}
+
+.projects__link-item span {
+  font-family: "SFT Schrifted", sans-serif;
+  text-shadow: var(--text-shadow);
+  font-size: 24px;
+  font-style: normal;
+}
+
+.projects__link-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.projects__link-item:hover .projects__arrow {
+  transform: scale(1.035);
+}
+
+.projects__arrow,
+.projects__link-item span {
+  transition: transform 0.1s linear;
+}
+
+/* Photo */
+
+.projects__list {
+  margin-top: 52px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  row-gap: 48px;
+}
+
+.projects__item:first-child {
+    grid-column: 1 / -1;
+}
+
+
+/* .projects__name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24px;
+  font-family: "SFT Schrifted", sans-serif;
+  text-shadow: var(--text-shadow);
+  color: var(--dark-blue);
+
+  text-decoration: none;
+  line-height: 29px;
+  margin-top: 36px;
+} */
+
+/* .services__name span, .services__name:visited {
+  width: 402px;
+  transition: text-shadow 0.4s ease;
+  text-decoration: none;
+}
+
+.services__icon-box {
+  background-color: var(--green);
+  border-radius: 100px;
+  height: 36px;
+  width: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color 0.4s ease;
+}
+
+.services__name:hover .services__icon-box {
+  background-color: var(--dark-blue);
+}
+
+.services__name:hover span {
+  text-shadow: 1px 0 1px black;
+} */

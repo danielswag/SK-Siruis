@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css_files/header.css" />
+    <link rel="stylesheet" href="css_files/general.css" />
+    <link rel="stylesheet" href="css_files/Main_photo.css" />
+    <link rel="stylesheet" href="css_files/hero.css" />
+    <link rel="stylesheet" href="css_files/services.css" />
+    <link rel="stylesheet" href="css_files/projects.css" />
+    <link rel="stylesheet" href="css_files/footer.css" />
+    <link rel="stylesheet" href="css_files/success-module-window.css" />
+    <link rel="stylesheet" href="css_files/adaptive/header-adaptive.css" />
+    <link rel="stylesheet" href="css_files/adaptive/main-photo.css">
+    <link rel="stylesheet" href="css_files/adaptive/hero.css">
+    <link rel="stylesheet" href="css_files/adaptive/services.css">
+    <link rel="stylesheet" href="css_files/adaptive/projects.css">
+    <link rel="stylesheet" href="css_files/adaptive/footer-adaptive.css">
+    <link rel="stylesheet" href="css_files/module-window.css" />
+    <link rel="stylesheet" href="css_files/adaptive/module-window.css">
+
+    <link
+      rel="shortcut icon"
+      href="icons/logo_favicon.png"
+      type="image/x-icon"
+    />
+    
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>SIRIUS</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__block">
+        <nav class="header__nav">
+          <!-- LOGO -->
+          <img class="header__nav-logo" src="icons/Logo.png" alt="" />
+          <div class="header__nav-box">
+            <!-- LIST -->
+            <ul class="header__list">
+              <!-- ABOUT US -->
+              <li>
+                <a href="about_us.html" class="header__list-link">О компании</a>
+              </li>
+              <!-- PROJECTS -->
+              <li>
+                <a href="projects.html" class="header__list-link">Объекты</a>
+              </li>
+              <!-- SERVISES -->
+              <li>
+                <a href="services.html" class="header__list-link">Услуги</a>
+              </li>
+              <!-- CONTACTS -->
+              <li>
+                <a href="contacts.html" class="header__list-link">Контакты</a>
+              </li>
+            </ul>
+            <!-- PHONE-BUTTON -->
+            <!-- <div class="header__button-sidebar">
+              <button class="header__call" id="callButton">
+                <img src="icons/phone.svg" alt="Позвонить" class="phone" />
+              </button> -->
+            <!-- КНОПКА САЙДБАРА -->
+            <!-- <button class="header__burger" id="burgerButton" type="button">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>  -->
+          </div>
+          
+          <div class="header__button-sidebar">
+            <!-- PHONE-BUTTON -->
+            <button class="header__call" id="callButton">
+              <img src="icons/phone.svg" alt="Позвонить" class="phone" />
+            </button>
+            <!-- КНОПКА САЙДБАРА -->
+            <button class="header__burger" id="burgerButton" type="button">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+          <!-- <button class="header__call-adaptive" id="callButton">
+            <img src="icons/phone.svg" alt="Позвонить" class="phone" />
+          </button> -->
+        </nav>
+      </div>
+    </header>
+    <!-- SIDEBAR -->
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar__overlay" id="sidebarOverlay"></div>
+      <aside class="sidebar__menu">
+        <button class="sidebar__close" id="sidebarClose" type="button">
+          ×
+        </button>
+        <ul class="sidebar__list">
+          <!-- ABOUT US -->
+          <li>
+            <a href="about_us.html" class="sidebar__link">О компании</a>
+          </li>
+          <!-- PROJECTS -->
+          <li>
+            <a href="projects.html" class="sidebar__link">Объекты</a>
+          </li>
+          <!-- SERVISES -->
+          <li>
+            <a href="services.html" class="sidebar__link">Услуги</a>
+          </li>
+          <!-- CONTACTS -->
+          <li>
+            <a href="contacts.html" class="sidebar__link">Контакты</a>
+          </li>
+        </ul>
+        <!-- PHONE-BUTTON -->
+        <!-- <button class="sidebar__call" id="sidebarCall" type="button">
+            <img src="icons/phone.svg" alt="Позвонить" class="phone" />
+          </button> -->
+      </aside>
+    </div>
+    <main>
+      <!-- MAIN PHOTO -->
+      <section class="photo">
+        <div class="photo__container">
+          <!-- CONTENT -->
+          <div class="photo__content">
+            <h1>Самый простой способ построить свой успех</h1>
+            <button>Рассчитать стоимость</button>
+          </div>
+          <!-- EMAIL -->
+          <div class="email__content">SkSirius@su10.ru</div>
+          <!-- IMAGE -->
+          <div class="photo__image">
+            <img src="Images/Fone.png" alt="" class="image__photo" />
+          </div>
+        </div>
+      </section>
+      <!-- DESCRIPTION ABOUT COMPANY -->
+      <section class="hero">
+        <div class="hero__container">
+          <h2 class="hero__title">Мы — СК Сириус</h2>
+          <div class="hero__desc">
+            Мы молодая компания, предоставляющая 
+            услуги по строительству и разработке 
+            проектов. Наша сила — уникальная сеть 
+            местных и международных навыков.
+          </div>
+        </div>
+      </section>
+      <!-- УСЛУГИ -->
+      <section class="services">
+        <div class="services__container">
+          <!-- LINE -->
+          <div class="services__line"></div>
+          <!-- HEADER -->
+          <div class="services__header">
+            <!-- TITLE -->
+            <h2 class="services__title">Чем мы можем помочь?</h2>
+            <!-- LINK -->
+            <div class="services__link">
+              <a href="services.html" class="services__link-item"
+                ><span>Все услуги</span>
+                <img
+                  src="icons/pointers/services-arrow.svg"
+                  alt=""
+                  class="services__arrow"
+              /></a>
+            </div>
+          </div>
+          <div class="services__list">
+            <!-- 1 -->
+            <article class="services__item">
+              <img src="Images/low.png" alt="" class="services__image" />
+              <a href="/" class="services__name"
+                ><span>Строительство малоэтажных зданий и сооружений</span>
+                <div class="services__icon-box">
+                  <img
+                    class="services__icon"
+                    src="icons/pointers/project-arrow.svg"
+                    alt=""
+                  />
+                </div>
+              </a>
+            </article>
+            <!-- 2 -->
+            <article class="services__item">
+              <img src="Images/higher.png" alt="" class="services__image" />
+              <a href="/" class="services__name"
+                ><span>Возведение многоэтажных жилых комплеков</span>
+                <div class="services__icon-box">
+                  <img
+                    class="services__icon"
+                    src="icons/pointers/project-arrow.svg"
+                    alt=""
+                  />
+                </div>
+              </a>
+            </article>
+            <!-- 3 -->
+            <article class="services__item">
+              <img
+                src="Images/private_house.png"
+                alt=""
+                class="services__image"
+              />
+              <a href="/" class="services__name"
+                ><span>Постройка частных домов и коттеджей</span>
+                <div class="services__icon-box">
+                  <img
+                    class="services__icon"
+                    src="icons/pointers/project-arrow.svg"
+                    alt=""
+                  />
+                </div>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- ПРОЕКТЫ -->
+      <section class="projects">
+        <div class="projects__container">
+          <div class="projects__header">
+            <div class="projects__title">Наши проекты</div>
+            <!-- LINK -->
+            <div class="projects__link">
+              <a href="projects.html" class="projects__link-item"
+                ><span>Все проекты</span>
+                <img
+                  src="icons/pointers/services-arrow.svg"
+                  alt=""
+                  class="projects__arrow"
+              /></a>
+            </div>
+          </div>
+          <div class="projects__list">
+            <!-- 1 -->
+            <article class="projects__item">
+              <img
+                src="Images/Slavynski_dom.png"
+                alt=""
+                class="projects__image"
+              />
+              <a href="projectInDetails.html" class="services__name services__name-adaptive"
+                ><span>Славянский дом</span>
+                <div class="services__icon-box">
+                  <img
+                    class="services__icon"
+                    src="icons/pointers/project-arrow.svg"
+                    alt=""
+                  />
+                </div>
+              </a>
+            </article>
+            <!-- 2 -->
+            <article class="projects__item">
+              <img src="Images/Cottage.png" alt="" class="projects__image" />
+              <a href="/" class="services__name services__name-adaptive"
+                ><span>Коттедж Ново-Талицы</span>
+                <div class="services__icon-box">
+                  <img
+                    class="services__icon"
+                    src="icons/pointers/project-arrow.svg"
+                    alt=""
+                  />
+                </div>
+              </a>
+            </article>
+            <!-- 3 -->
+            <article class="projects__item">
+              <img src="Images/Cottage_2.png" alt="" class="projects__image" />
+              <a href="/" class="services__name services__name-adaptive"
+                ><span>Коттедж за городом</span>
+                <div class="services__icon-box">
+                  <img
+                    class="projects__icon"
+                    src="icons/pointers/project-arrow.svg"
+                    alt=""
+                  />
+                </div>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <h2>
+          <a href="contacts.html" class="footer__title"
+            >Расскажите о вашем проекте</a
+          >
+        </h2>
+
+        <div class="footer__middle">
+          <div class="footer__contacts">
+            <a href="/" class="footer__email">SkSirius@su10.ru</a
+            ><a href="/" class="footer__phone-number">8 (962) 167-78-90</a>
+          </div>
+          <nav class="footer__nav">
+            <!-- <div class="footer__nav-up"> -->
+            <a href="about_us.html" class="footer__nav-item">О компании</a>
+            <a href="services.html" class="footer__nav-item">Контакты</a>
+            <!-- </div> -->
+            <!-- <div class="footer__nav-bottom"> -->
+            <a href="projects.html" class="footer__nav-item">Проекты</a>
+            <a href="contacts.html" class="footer__nav-item">Услуги</a>
+            <!-- </div> -->
+          </nav>
+        </div>
+
+        <div class="footer__bottom">
+          <div class="footer__socials">
+            <img src="icons/social-medias/vk.svg" alt="" class="vk" />
+            <img src="icons/social-medias/tg.svg" alt="" class="tg" />
+            <img src="icons/social-medias/cpo.png" alt="" class="cpo" />
+          </div>
+          <div class="footer__copyright">
+            <p class="footer__copyright-text">© 2022–2026, CК Sirius</p>
+            <p class="footer__copyright-text">Copyrights 2026</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- MODULE-WINDOW -->
+    <div class="callback" id="callback">
+      <div class="callback__overlay"></div>
+
+      <div class="callback__window">
+        <button class="callback__close" id="callbackClose">×</button>
+
+        <h2 class="callback__title">У вас возникли вопросы?</h2>
+
+        <div class="callback__manager">
+          <img
+            src="Images/owner-picture.png"
+            alt=""
+            class="callback__manager-photo"
+          />
+
+          <p class="callback__manager-text">
+            Наш менеджер перезвонит вам<br />
+            в рабочее время в течение 2 минут
+          </p>
+        </div>
+
+        <form class="callback__form">
+          <input
+            type="tel"
+            class="callback__input"
+            placeholder="Телефон *"
+            id="callbackPhone"
+          />
+
+          <button type="submit" class="callback__submit" id="callbackSubmit">
+            Перезвонить
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- УСПЕШНО ОТПРАВЛЕНО -->
+    <div class="callback__success" id="callbackSuccess">
+      <div class="callback__success-overlay"></div>
+      <div class="callback__success-modal">
+        <button class="callback__success-close" id="successClose">
+          <img src="icons/cross.svg" alt="" />
+        </button>
+
+        <div class="callback__success-icon">
+          <img src="icons/plane.svg" alt="" />
+        </div>
+
+        <h3 class="callback__success-title">
+          Ваша заявка на обратный звонок зарегистрирована
+        </h3>
+        <p class="callback__success-text">
+          Наш специалист скоро перезвонит вам
+        </p>
+      </div>
+    </div>
+    <script src="js/callback.js"></script>
+    <script src="js/sidebar.js"></script>
+    <!-- <script src="js/request.js"></script> -->
+  </body>
+</html>

@@ -1,0 +1,124 @@
+.footer {
+  background-color: var(--dark-blue);
+  height: 840px;
+  margin-top: -64px;
+}
+
+.footer__title {
+  display: inline-block;
+  padding-top: 128px;
+  color: rgb(255, 255, 255);
+  font-size: 90px;
+  font-family: "SFT Schrifted", sans-serif;
+  width: 780px;
+  text-decoration: none;
+  text-shadow: var(--text-shadow);
+  letter-spacing: 4%;
+  line-height: 107px;
+  transition: 0.2s;
+}
+
+.footer__title:hover {
+  text-shadow: 3px 4px 10px black;
+}
+
+.footer__contacts {
+  /* margin-top: 188px; */
+  width: 226px;
+  display: flex;
+  flex-direction: column;
+  font-size: 26px;
+  font-family: "SFT Schrifted", sans-serif;
+  color: white;
+}
+
+.footer__email {
+  text-decoration: underline;
+  color: white;
+  line-height: 31px;
+  padding-bottom: 15px;
+}
+
+.footer__phone-number {
+  text-decoration: none;
+  color: white;
+  line-height: 31px;
+  transition: opacity 0.3s ease;
+}
+
+.footer__email:hover,
+.footer__phone-number:hover {
+  opacity: 0.5;
+}
+
+.footer__nav-item:active {
+  text-decoration: underline;
+}
+
+.footer__middle {
+  margin-top: 188px;
+  width: 1126px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer__nav {
+  width: 333px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 45px;
+  row-gap: 15px;
+  font-size: 26px;
+}
+
+.footer__nav-item {
+  white-space: nowrap;
+  text-decoration: none;
+  color: white;
+  font-family: "SFT Schrifted", sans-serif;
+  line-height: 31px;
+  transition: opacity 0.3s ease;
+}
+
+.footer__nav-item:hover {
+  opacity: 0.5;
+}
+
+.footer__socials {
+  display: flex;
+  justify-content: end;
+  gap: 32px;
+
+  margin-top: 28px;
+}
+
+.vk,
+.tg,
+.cpo {
+  transition: opacity 0.4s ease;
+  cursor: pointer;
+}
+
+.vk:hover,
+.tg:hover,
+.cpo:hover {
+  opacity: 0.5;
+}
+
+.footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 54px;
+  color: #a0a0a0;
+  font-size: 22px;
+  font-family: "SFT Schrifted", sans-serif;
+}
+
+/* .footer__nav a {
+    
+} */
+
+/* .footer__nav{
+  margin-left: 724px;
+} */

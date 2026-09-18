@@ -1,0 +1,121 @@
+.projectDetails__photo-content {
+  top: 80%;
+  left: 8.1%;
+  position: absolute;
+}
+
+.projectDetails {
+  background-color: var(--gray);
+}
+
+.projectDetails__container {
+  position: relative;
+  margin-inline: auto;
+  max-width: 1440px;
+  width: 100%;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 36px;
+  font-size: clamp(24px, 3vw, 60px);
+  font-family: "SFT Schrifted", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-shadow: var(--text-shadow);
+  /* -webkit-text-stroke: 1px rgba(255, 255, 255, 0.25); */
+  line-height: 1.34;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 4px;
+}
+
+.one-project {
+  margin-top: 96px;
+  display: flex;
+  justify-content: space-between;
+  gap: 138px;
+}
+
+.one-project__desc-title {
+  font-family: "SFT Schrifted";
+  font-size: 28px;
+  letter-spacing: 0%;
+  text-shadow: var(--text-shadow);
+  line-height: 48px;
+  width: 540px;
+}
+
+.one-project__desc-text {
+  font-family: var(--font-main);
+  font-size: 22px;
+  letter-spacing: 0%;
+  text-shadow: var(--text-shadow);
+  line-height: 48px;
+  width: 760px;
+}
+
+.projectDetails__photo {
+  width: 700px;
+  height: 710px;
+}
+
+.projectDetails__photos {
+  margin-top: 96px;
+  display: flex;
+  gap: 48px;
+  padding-bottom: 96px;
+}
+
+.project-numbers__container {
+  margin-top: 96px;
+  border-top: 1px solid black;
+  padding-top: 162px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 96px;
+}
+
+.project-numbers__title {
+  font-size: 60px;
+  font-family: "SFT Schrifted", sans-serif;
+  /* padding-top: 32px; */
+  text-shadow: var(--text-shadow);
+  color: var(--dark-blue);
+  line-height: 71px;
+}
+
+.project-numbers__desc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 78px;
+  row-gap: 50px;
+}
+
+.project-numbers__element {
+  width: 321px;
+  /* height: 158px; */
+  border-bottom: 1px solid black;
+}
+
+.project-nums {
+  font:
+    600 80px/95px "SFT Schrifted",
+    sans-serif;
+  color: var(--dark-blue);
+  text-shadow: var(--text-shadow);
+  margin-bottom: 6px;
+}
+
+.project-nums__desc {
+  font: 600 24px/30px var(--font-main);
+  padding-bottom: 26px;
+}
+
+/* FOOTER */
+.project-numbers {
+  background-color: white;
+  /* padding-bottom: 96px; */
+  border-radius: 0 0 70px 70px;
+  position: relative;
+  z-index: 1;
+}
