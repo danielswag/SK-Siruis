@@ -7,8 +7,18 @@
   z-index: 1;
 }
 
+html{ background-color: var(--dark-blue);}
+
+body{background-color: white;}
+
+.header{
+  background-color: white;
+}
+
 .footer__page-contacts {
-  height: 194px;
+  /* height: 194px; */
+  max-height: 194px;
+  /* max-height: 194px; */
 }
 
 .footer__page-copy {

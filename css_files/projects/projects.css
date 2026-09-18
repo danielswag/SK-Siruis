@@ -71,6 +71,7 @@
 .p__review-text {
   font: 500 28px/48px var(--font-main);
   margin-bottom: 40px;
+  hyphens: auto;
 }
 
 .p__review-company-name {

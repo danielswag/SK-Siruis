@@ -46,7 +46,7 @@ main {
   padding-top: 80px;
 }
 
-.services__element-withoutLine {
+.services__last-element {
   height: 360px;
   display: flex;
   justify-content: flex-start;

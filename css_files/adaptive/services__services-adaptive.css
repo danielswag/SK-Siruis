@@ -36,10 +36,11 @@
 
   .services__element,
   .services__element-withoutLine,
-  .services__element-withoutLine {
+  .services__last-element {
     display: flex;
     flex-direction: column;
     gap: clamp(20px, 4vw, 50px);
+    height: auto;
   }
 
   .services__element-image {
@@ -98,5 +99,9 @@
     margin-bottom: 22px;
     padding-top: 22px;
     font-size: 32px;
+  }
+
+  .services__text-desc{
+    /* hyphens: auto; */
   }
 }
