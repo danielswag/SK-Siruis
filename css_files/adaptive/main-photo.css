@@ -46,6 +46,14 @@
     font-size: clamp(30px, 5vw, 60px);
     text-shadow: none;
     text-transform: uppercase;
+    margin-bottom: 32px;
+    
+  }
+
+  .photo__content a{
+      width: 300px;
+  height: 50px;
+  font-size: 18px;
   }
 
   .photo__content {
@@ -55,6 +63,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10px;
+    padding-block: 20px;
+    width: 360px;
+    
   }
 }
 

@@ -1,0 +1,16 @@
+@media (max-width: 480px) {
+
+    .services__container {
+        width: calc(100% - 24px);
+    }
+
+.callback__success{align-items: flex-start;
+    padding-top: 160px;
+}
+
+.callback__success-modal{
+    max-height: 90%;
+    padding: 36px 32px;
+}
+
+}
