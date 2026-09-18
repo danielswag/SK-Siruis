@@ -9,9 +9,18 @@
   
 }
 
+.advantages__content-image{
+  display: none;
+}
+
+
 .advantages__line {
   position: absolute;
   pointer-events: none;
+    left: 0;
+  top: 0;
+  padding-left: 260px;
+  padding-top: 40px;
 }
 
 .advantages__container {
@@ -31,14 +40,6 @@
   /* height: 264px; */
 }
 
-.advantages__line {
-  position: absolute;
-  left: 0;
-  top: 0;
-  padding-left: 260px;
-  padding-top: 40px;
-  /* width: 100%; */
-}
 
 .advantages__number {
   padding-top: 36px;
@@ -54,8 +55,12 @@
   padding-top: 20px;
 }
 
-.line-bottom {display: none;
-margin-bottom: 36px;}
+.advantages__title{
+  text-transform: uppercase;
+}
+
+/* .line-bottom {display: none;
+margin-bottom: 36px;} */
 
 .advantages__title {
   font:

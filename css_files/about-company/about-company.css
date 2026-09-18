@@ -40,7 +40,7 @@
   height: 560px;
 }
 
-.owner__quote {
+.owner__quote, .owner__quote2 {
   font-size: 24px;
   font-weight: 400;
   font-family: var(--font-main);
@@ -77,6 +77,10 @@
   position: absolute;
   left: 88px;
   top: 30px;
+}
+
+.owner__quote-adaptive{
+  display: none;
 }
 
 .quotation-right {
