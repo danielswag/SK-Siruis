@@ -1,7 +1,14 @@
 .projectDetails__photo-content {
-  top: 80%;
-  left: 8.1%;
+  /* top: 80%;
+  left: 8.1%; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  top: 44%;
   position: absolute;
+  z-index: 1;
+  width: 100%;
 }
 
 .projectDetails {
@@ -15,19 +22,46 @@
   width: 100%;
 }
 
+  .photo__image {
+    position: relative;
+}
+
+.projectDetails__adress{
+  margin-top: 0;
+  font-size: clamp(24px, 1.5vw, 60px);
+  font-family: "Public Sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  opacity: 0.8;
+  line-height: 0.6;
+}
+
+  .photo__image::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.42);
+}
+
 h1 {
+  hyphens: auto;
   margin-top: 0;
   margin-bottom: 36px;
   font-size: clamp(24px, 3vw, 60px);
-  font-family: "SFT Schrifted", sans-serif;
+  /* font-family: "SFT Schrifted", sans-serif; */
+  font-family: "Public Sans", sans-serif;
   font-weight: 600;
   letter-spacing: 0.05em;
-  text-shadow: var(--text-shadow);
+  color: white;
+  /* text-shadow: var(--text-shadow); */
   /* -webkit-text-stroke: 1px rgba(255, 255, 255, 0.25); */
   line-height: 1.34;
-  background-color: rgba(255, 255, 255, 0.5);
+  /* background-color: rgba(255, 255, 255, 0.5); */
   padding: 4px;
 }
+
+
 
 .one-project {
   margin-top: 96px;
@@ -52,6 +86,7 @@ h1 {
   text-shadow: var(--text-shadow);
   line-height: 48px;
   width: 760px;
+  hyphens: auto;
 }
 
 .projectDetails__photo {
