@@ -2,6 +2,10 @@
   margin-top: 105px;
 }
 
+.request__bottom-adaptive{
+  display: none;
+}
+
 /* TITLE */
 
 .request__title {
@@ -30,7 +34,9 @@
   margin-top: 96px;
 }
 
-.request__services__title {
+
+
+.request__services-title {
   font-family: "SFT Schrifted";
   font-size: 60px;
   letter-spacing: 4%;

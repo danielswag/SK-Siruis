@@ -10,7 +10,22 @@
     <link rel="stylesheet" href="css_files/request/inputData.css" />
     <link rel="stylesheet" href="css_files/request/target.css" />
     <link rel="stylesheet" href="css_files/request/bottom.css" />
-    <link rel="shortcut icon" href="icons/logo_favicon.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="icons/logo_favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css_files/adaptive/header-adaptive.css" />
+    <link rel="stylesheet" href="css_files/adaptive/request-adaptive.css" />
+    <link rel="stylesheet" href="css_files/adaptive/footer-adaptive.css" />
+    <link rel="stylesheet" href="css_files/module-window.css" />
+    <link rel="stylesheet" href="css_files/adaptive/module-window.css" />
+    <link rel="stylesheet" href="css_files/success-module-window.css" />
+
+    <link
+      rel="stylesheet"
+      href="css_files/adaptive/succes-module-adaptive.css"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,7 +44,6 @@
           <a href="index.html"
             ><img class="header__nav-logo" src="icons/Logo.png" alt=""
           /></a>
-
           <div class="header__nav-box">
             <!-- LIST -->
             <ul class="header__list">
@@ -51,13 +65,68 @@
               </li>
             </ul>
             <!-- PHONE-BUTTON -->
-            <a href="/" class="header__button"
-              ><img src="icons/phone.svg" alt="" class="phone"
-            /></a>
+            <!-- <div class="header__button-sidebar">
+              <button class="header__call" id="callButton">
+                <img src="icons/phone.svg" alt="Позвонить" class="phone" />
+              </button> -->
+            <!-- КНОПКА САЙДБАРА -->
+            <!-- <button class="header__burger" id="burgerButton" type="button">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>  -->
           </div>
+
+          <div class="header__button-sidebar">
+            <!-- PHONE-BUTTON -->
+            <button class="header__call" id="callButton">
+              <img src="icons/phone.svg" alt="Позвонить" class="phone" />
+            </button>
+            <!-- КНОПКА САЙДБАРА -->
+            <button class="header__burger" id="burgerButton" type="button">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+          <!-- <button class="header__call-adaptive" id="callButton">
+            <img src="icons/phone.svg" alt="Позвонить" class="phone" />
+          </button> -->
         </nav>
       </div>
     </header>
+    <!-- SIDEBAR -->
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar__overlay" id="sidebarOverlay"></div>
+      <aside class="sidebar__menu">
+        <button class="sidebar__close" id="sidebarClose" type="button">
+          ×
+        </button>
+        <ul class="sidebar__list">
+          <!-- ABOUT US -->
+          <li>
+            <a href="about_us.html" class="sidebar__link">О компании</a>
+          </li>
+          <!-- PROJECTS -->
+          <li>
+            <a href="projects.html" class="sidebar__link">Объекты</a>
+          </li>
+          <!-- SERVISES -->
+          <li>
+            <a href="services.html" class="sidebar__link">Услуги</a>
+          </li>
+          <!-- CONTACTS -->
+          <li>
+            <a href="contacts.html" class="sidebar__link">Контакты</a>
+          </li>
+        </ul>
+        <!-- PHONE-BUTTON -->
+        <!-- <button class="sidebar__call" id="sidebarCall" type="button">
+            <img src="icons/phone.svg" alt="Позвонить" class="phone" />
+          </button> -->
+      </aside>
+    </div>
     <main>
       <section class="request">
         <div class="request__container">
@@ -71,8 +140,8 @@
         </div>
       </section>
       <section class="request__services">
-        <div class="request__services__container">
-          <h2 class="request__services__title">Вас интересует</h2>
+        <div class="requestServices__container">
+          <h2 class="request__services-title">Вас интересует</h2>
           <div class="request__services-items">
             <button class="request__services-item">Малоэтажные здания</button>
             <button class="request__services-item">Многоэтажные дома</button>
@@ -152,8 +221,63 @@
           </div>
         </div>
       </section>
+
+      <section class="request__bottom-adaptive">
+        <div class="requestBottom__container">
+          <div class="request__bottom-top">
+            <div class="request__bottom-file">
+              <input type="file" id="file" class="file-upload" />
+
+              <label for="file" class="file-upload__label"
+                ><span class="file-upload__label-text">Прикрепить файл</span>
+
+                <span class="file-upload__icon"
+                  ><img
+                    class="request__bottom-image"
+                    src="icons/ic_sharp-attach-file.svg"
+                    alt=""
+                /></span>
+              </label>
+            </div>
+            <div class="request__list">
+              <ol>
+                <li class="request__list-item">
+                  1. Каким видом деятельности вы занимаетесь?
+                </li>
+                <li class="request__list-item">2. С чем мы можем помочь?</li>
+                <li class="request__list-item">
+                  3. На какой срок и бюджет рассчитываете?
+                </li>
+              </ol>
+            </div>
+          </div>
+          <div class="request__bottom-down">
+            <button type="button" class="request__bottom-send" id="submit">
+              Отправить
+            </button>
+            <p class="request__success" id="successMessage">
+              Ваша заявка отправлена
+            </p>
+
+            <div class="privacy__policy">
+              <input type="checkbox" class="privacy__policy__checkbox" />
+              <span
+                >Даю согласие на обработку персональных данных и соглашаюсь с
+                <span class="privacy__policy-blue"
+                  >Условиями использования</span
+                >
+                и
+                <span class="privacy__policy-blue"
+                  >Политикой конфиденциальности</span
+                ></span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="request__bottom">
-        <div class="request__bottom__container">
+        <div class="requestBottom__container">
           <div class="request__bottom-left">
             <div class="request__bottom-file">
               <input type="file" id="file" class="file-upload" />
@@ -169,10 +293,10 @@
                 /></span>
               </label>
             </div>
-            <button type="button" class="request__bottom-send" id="submit">
+            <button type="button" class="request__bottom-send" id="submit-desktop">
               Отправить
             </button>
-            <p class="request__success" id="successMessage">
+            <p class="request__success" id="successMessage-desktop">
               Ваша заявка отправлена
             </p>
           </div>
@@ -215,6 +339,66 @@
         </div>
       </div>
     </footer>
-    <script src="js/request.js"></script>
+    <!-- MODULE-WINDOW -->
+    <div class="callback" id="callback">
+      <div class="callback__overlay"></div>
+
+      <div class="callback__window">
+        <button class="callback__close" id="callbackClose">×</button>
+
+        <h2 class="callback__title">У вас возникли вопросы?</h2>
+
+        <div class="callback__manager">
+          <img
+            src="Images/owner-picture.png"
+            alt=""
+            class="callback__manager-photo"
+          />
+
+          <p class="callback__manager-text">
+            Наш менеджер перезвонит вам<br />
+            в рабочее время в течение дня
+          </p>
+        </div>
+
+        <form class="callback__form">
+          <input
+            type="tel"
+            class="callback__input"
+            placeholder="Телефон *"
+            id="callbackPhone"
+          />
+
+          <button type="submit" class="callback__submit" id="callbackSubmit">
+            Перезвонить
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- УСПЕШНО ОТПРАВЛЕНО -->
+    <div class="callback__success" id="callbackSuccess">
+      <div class="callback__success-overlay"></div>
+      <div class="callback__success-modal">
+        <button class="callback__success-close" id="successClose">
+          <img src="icons/cross.svg" alt="" />
+        </button>
+
+        <div class="callback__success-icon">
+          <img src="icons/plane.svg" alt="" />
+        </div>
+
+        <h3 class="callback__success-title">
+          Ваша заявка на обратный звонок зарегистрирована
+        </h3>
+        <p class="callback__success-text">
+          Наш специалист скоро перезвонит вам
+        </p>
+      </div>
+    </div>
+    <script type="module" src="js/callback.js"></script>
+    <script type="module" src="js/sidebar.js"></script>
+    <!-- <script type="module" src="js/request.js"></script> -->
+    <!-- <script type="module" src="js/requestnew.js"></script> -->
+    <script type="module" src="js/reques-bothVars.js"></script>
   </body>
 </html>

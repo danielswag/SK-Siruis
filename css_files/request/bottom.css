@@ -10,7 +10,7 @@
   margin-top: 96px;
 }
 
-.request__bottom__container {
+.requestBottom__container {
   display: grid;
   grid-template-columns: 50% 1fr;
   column-gap: 64px;
