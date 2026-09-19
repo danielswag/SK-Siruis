@@ -59,6 +59,14 @@
   text-transform: uppercase;
 }
 
+.descriptor{
+  display: none;
+}
+
+.advantages-adaptive__content-image{
+  display: none;
+}
+
 /* .line-bottom {display: none;
 margin-bottom: 36px;} */
 
