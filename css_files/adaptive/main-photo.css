@@ -14,7 +14,59 @@
 @media (max-width: 1024px) {
   .container {
     width: min(900px, calc(100% - 40px));
+    
   }
+
+  .photo__container {
+    width: calc(100% - 24px);
+    position: relative;
+    margin-inline: auto;
+    max-width: 1440px;
+    width: 100%;
+  }
+
+  .image__photo {
+    width: 100%;
+    height: 600px;
+    display: block;
+    object-fit: cover;
+  }
+
+  .email__content {
+    display: none;
+  }
+
+  .photo__content h1 {
+    text-align: center;
+    font-size: clamp(30px, 5vw, 60px);
+    text-shadow: none;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    width: auto;
+    
+  }
+
+  .photo__content a{
+      width: 300px;
+  height: 50px;
+  font-size: 18px;
+  }
+
+  .photo__content {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    padding-block: 20px;
+    width: 660px;
+    
+  }
+
+
+  
 }
 
 /* =========================

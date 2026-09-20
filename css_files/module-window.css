@@ -9,6 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    /* display: block; */
 }
 
 .callback__overlay {
@@ -19,13 +20,22 @@
 
 .callback__window {
     position: relative;
+        /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
     z-index: 1;
+
+    /* box-sizing: border-box; */
 
     width: 540px;
     min-height: 350px;
     padding: 45px 50px;
 
     background-color: white;
+
+        /* margin-left: auto;
+    margin-right: auto; */
 }
 
 .callback__close {
