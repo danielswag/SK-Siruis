@@ -129,13 +129,33 @@
   }
 
     .services__image{
-    max-height: none;
+    /* max-height: none; */
     /* align-items: stretch; */
   }
 
   .services__list {
     grid-template-columns: 1fr; /* на совсем маленьких — точно в столбик */
-    gap: 96px;
+    gap: 48px;
+  }
+
+  .services__link-item span{
+    font-size: 0;
+  }
+
+  .services__link-item span::after{
+    content: "ВСЕ";
+    font-size: 16px;
+    font-family: var(--font-main);
+  }
+
+  .services__image{
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+
+  .services__item{
+    max-width: none;
   }
 }
 

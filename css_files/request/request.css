@@ -63,6 +63,7 @@
   text-shadow: var(--text-shadow);
   border: none;
   cursor: pointer;
+  color: black;
 
   font-family: var(--font-main);
   font-size: 22px;
