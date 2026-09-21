@@ -53,6 +53,8 @@
   gap: 14px;
 }
 
+.services__item{max-width: 460px;}
+
 .services__link-item:hover .services__arrow {
   transform: scale(1.035);
 }
@@ -71,9 +73,12 @@
 }
 
 .services__name {
-  /* display: flex;
+  display: flex;
   align-items: center;
-  justify-content: space-between; */
+  justify-content: space-between;
+          /* min-height: 0;
+          flex: 1; */
+  width: 100%;
   font-size: 24px;
   font-family: "SFT Schrifted", sans-serif;
   text-shadow: var(--text-shadow);
@@ -85,7 +90,7 @@
 }
 
 .services__name span, .services__name:visited {
-  width: 402px;
+  width: auto;
   transition: text-shadow 0.4s ease;
   text-decoration: none;
 }
