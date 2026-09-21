@@ -224,6 +224,7 @@
   .request__bottom-file {
     /* width: 380px;
     gap: 4px; */
+    width: auto;
     gap: 156px;
     height: 80px;
   }
@@ -254,7 +255,7 @@
    SMALL MOBILE
 ========================= */
 
-@media (max-width: 480px) {
+@media (max-width: 480px),(min-width: 360px) {
   .request__container,
   .requestBottom__container,
   .inputData__container,
@@ -306,10 +307,10 @@ transform: translateX(-50%);
     /* width: auto; */
     /* width: 90%; */
         width: 100%;
-    max-width: 100%;
+    /* max-width: 100%; */
     /* flex: 1; */
     min-width: 0;
-    flex-shrink: 0;
+    /* flex-shrink: 0; */
   }
 
   .file-upload__label{
@@ -323,4 +324,22 @@ transform: translateX(-50%);
   .requestBottom__container{
     grid-template-columns: minmax(0, 1fr);
   }
+}
+
+@media (max-width: 400px) {
+  .request__container,
+  .requestBottom__container,
+  .inputData__container,
+  .target__container,
+  .requestServices__container {
+    width: calc(100% - 24px);
+  }
+    .request__services-item {
+
+    padding: 0px 40px;
+
+    
+
+  }
+
 }
