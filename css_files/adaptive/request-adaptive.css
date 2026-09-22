@@ -264,6 +264,11 @@
     width: calc(100% - 24px);
   }
 
+  /* .request__services-item:hover{
+    background-color: initial;
+    color: black;
+  } */
+
     .request__success{
     display: none;
       padding-inline: 50px;

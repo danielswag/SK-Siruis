@@ -77,12 +77,25 @@
 }
 
 .request__services-item:not(.active):hover {
-  background-color: #091d38;
+  /* background-color: #091d38;
   color: white;
-  opacity: 0.8;
+  opacity: 0.8; */
+  border: 1px solid black;
+  /* background-color: black; */
 }
 
 .request__services-item.active {
   background-color: #091d38;
+  /* background-color: red; */
   color: white;
+}
+/* .request__services-item:not(.active){
+  
+} */
+
+.request__services-item.active:hover{
+  /* background-color: red; */
+  background-color: #091d38;
+  color: white;
+  border: black;
 }
